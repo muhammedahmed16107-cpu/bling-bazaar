@@ -10,6 +10,7 @@ export default function Home() {
     newCart.splice(index, 1);
     setCart(newCart);
   };
+
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
 
   const products = [
@@ -29,9 +30,9 @@ export default function Home() {
   ];
 
   return (
-    <div style={{ padding: '2rem', fontFamily: 'sans-serif', backgroundColor: '#fff', color: '#000' }}>
+    <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h1 style={{ color: 'gold', textShadow: '0 0 5px gold' }}>Bling Bazaar</h1>
+        <h1 style={{ color: 'gold' }}>Bling Bazaar</h1>
         <button onClick={() => setShowCart(!showCart)} style={{ fontSize: '1.5rem', cursor: 'pointer' }}>
           🛒 ({cart.length})
         </button>
@@ -40,14 +41,11 @@ export default function Home() {
       <h2>Products</h2>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
         {products.map((product, idx) => (
-          <div key={idx} style={{ border: '1px solid #ccc', padding: '1rem', width: '220px', backgroundColor: '#fff' }}>
+          <div key={idx} style={{ border: '1px solid #ccc', padding: '1rem', width: '220px' }}>
             <img src={product.image} alt={product.name} width="200" height="200" />
             <h3>{product.name}</h3>
             <p>{product.price} PKR</p>
-            <button
-              onClick={() => addToCart(product)}
-              style={{ marginTop: '0.5rem', padding: '0.5rem 1rem', cursor: 'pointer', backgroundColor: 'gold', border: 'none' }}
-            >
+            <button onClick={() => addToCart(product)} style={{ marginTop: '0.5rem', padding: '0.5rem 1rem', cursor: 'pointer' }}>
               Add to Cart
             </button>
           </div>
@@ -60,8 +58,7 @@ export default function Home() {
           {cart.length === 0 && <p>Your cart is empty.</p>}
           {cart.map((item, idx) => (
             <div key={idx}>
-              {item.name} - {item.price} PKR{' '}
-              <button onClick={() => removeFromCart(idx)}>Remove</button>
+              {item.name} - {item.price} PKR <button onClick={() => removeFromCart(idx)}>Remove</button>
             </div>
           ))}
           <h3>Total: {totalPrice} PKR</h3>
@@ -75,10 +72,7 @@ export default function Home() {
                 <img src="/images/easypaisa.png" width="60" height="40" alt="Easypaisa" />
                 <img src="/images/creditcard.png" width="60" height="40" alt="Credit Card" />
               </div>
-              <button
-                style={{ marginTop: '0.5rem', padding: '0.5rem 1rem', backgroundColor: 'gold', cursor: 'pointer', border: 'none' }}
-                onClick={() => alert('Checkout successful!')}
-              >
+              <button style={{ marginTop: '0.5rem', padding: '0.5rem 1rem', backgroundColor: 'gold', cursor: 'pointer' }} onClick={() => alert('Checkout successful!')}>
                 Checkout
               </button>
             </div>
