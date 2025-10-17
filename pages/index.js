@@ -12,43 +12,41 @@ export default function Home() {
   };
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
 
-  // Products (variants are separate)
   const products = [
-    { name: 'Airpods Master Copy White', price: 2399, image: '/airpodswhite.jpg' },
-    { name: 'Airpods Master Copy Black', price: 2399, image: '/airpodsblack.jpg' },
-    { name: 'A9 Airpods White', price: 2499, image: '/a9airpodswhite.jpg' },
-    { name: 'A9 Airpods Black', price: 2499, image: '/a9airpodsblack.jpg' },
-    { name: 'P9 Headphones White', price: 1799, image: '/p9-white.jpg' },
-    { name: 'P9 Headphones Black', price: 1799, image: '/p9-black.jpg' },
-    { name: 'P9 Headphones Blue', price: 1799, image: '/p9-blue.jpg' },
-    { name: 'Arabic Aura Watch White', price: 1299, image: '/watch-white.jpg' },
-    { name: 'Arabic Aura Watch White Tiger', price: 1299, image: '/watch-tiger.jpg' },
-    { name: 'Arabic Aura Watch Black', price: 1299, image: '/watch-black.jpg' },
-    { name: 'Gucci Ladies Watch', price: 3499, image: '/gucciladies.jpg' },
-    { name: 'Rolex Sky Dweller', price: 3999, image: '/rolexskydweller.jpg' },
-    { name: 'Patek Philippe Silicon Strap', price: 1999, image: '/patekphillipe.jpg' },
+    { name: 'Airpods Master Copy White', price: 2399, image: '/images/airpodswhite.jpg' },
+    { name: 'Airpods Master Copy Black', price: 2399, image: '/images/airpodsblack.jpg' },
+    { name: 'A9 Airpods White', price: 2499, image: '/images/a9airpodswhite.jpg' },
+    { name: 'A9 Airpods Black', price: 2499, image: '/images/a9airpodsblack.jpg' },
+    { name: 'P9 Headphones White', price: 1799, image: '/images/p9-white.jpg' },
+    { name: 'P9 Headphones Black', price: 1799, image: '/images/p9-black.jpg' },
+    { name: 'P9 Headphones Blue', price: 1799, image: '/images/p9-blue.jpg' },
+    { name: 'Arabic Aura Watch White', price: 1299, image: '/images/watch-white.jpg' },
+    { name: 'Arabic Aura Watch White Tiger', price: 1299, image: '/images/watch-tiger.jpg' },
+    { name: 'Arabic Aura Watch Black', price: 1299, image: '/images/watch-black.jpg' },
+    { name: 'Gucci Ladies Watch', price: 3499, image: '/images/gucciladies.jpg' },
+    { name: 'Rolex Sky Dweller', price: 3999, image: '/images/rolexskydweller.jpg' },
+    { name: 'Patek Philippe Silicon Strap', price: 1999, image: '/images/patekphillipe.jpg' },
   ];
 
   return (
-    <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
+    <div style={{ padding: '2rem', fontFamily: 'sans-serif', backgroundColor: '#fff', color: '#000' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h1 style={{ color: 'gold' }}>Bling Bazaar</h1>
+        <h1 style={{ color: 'gold', textShadow: '0 0 5px gold' }}>Bling Bazaar</h1>
         <button onClick={() => setShowCart(!showCart)} style={{ fontSize: '1.5rem', cursor: 'pointer' }}>
           🛒 ({cart.length})
         </button>
       </div>
 
-      {/* Products Section */}
       <h2>Products</h2>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
         {products.map((product, idx) => (
-          <div key={idx} style={{ border: '1px solid #ccc', padding: '1rem', width: '220px' }}>
+          <div key={idx} style={{ border: '1px solid #ccc', padding: '1rem', width: '220px', backgroundColor: '#fff' }}>
             <img src={product.image} alt={product.name} width="200" height="200" />
             <h3>{product.name}</h3>
             <p>{product.price} PKR</p>
             <button
               onClick={() => addToCart(product)}
-              style={{ marginTop: '0.5rem', padding: '0.5rem 1rem', cursor: 'pointer' }}
+              style={{ marginTop: '0.5rem', padding: '0.5rem 1rem', cursor: 'pointer', backgroundColor: 'gold', border: 'none' }}
             >
               Add to Cart
             </button>
@@ -56,7 +54,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Cart Section */}
       {showCart && (
         <div style={{ marginTop: '2rem', borderTop: '2px solid gold', paddingTop: '1rem' }}>
           <h2>Cart</h2>
@@ -74,12 +71,12 @@ export default function Home() {
               <h3>Checkout</h3>
               <p>Select Payment Method:</p>
               <div style={{ display: 'flex', gap: '1rem' }}>
-                <img src="/cod.png" width="60" height="40" alt="COD" />
-                <img src="/easypaisa.png" width="60" height="40" alt="Easypaisa" />
-                <img src="/creditcard.png" width="60" height="40" alt="Credit Card" />
+                <img src="/images/cod.png" width="60" height="40" alt="COD" />
+                <img src="/images/easypaisa.png" width="60" height="40" alt="Easypaisa" />
+                <img src="/images/creditcard.png" width="60" height="40" alt="Credit Card" />
               </div>
               <button
-                style={{ marginTop: '0.5rem', padding: '0.5rem 1rem', backgroundColor: 'gold', cursor: 'pointer' }}
+                style={{ marginTop: '0.5rem', padding: '0.5rem 1rem', backgroundColor: 'gold', cursor: 'pointer', border: 'none' }}
                 onClick={() => alert('Checkout successful!')}
               >
                 Checkout
