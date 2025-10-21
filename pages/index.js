@@ -245,15 +245,42 @@ export default function Home() {
 
       {/* Footer */}
       <footer style={{ marginTop: "40px", padding: "20px", textAlign: "center" }}>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" style={{ margin: "0 10px" }}>
-          <img src="/images/facebook.png" alt="Facebook" style={{ width: "24px", height: "24px" }} />
-        </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style={{ margin: "0 10px" }}>
-          <img src="/images/instagram.png" alt="Instagram" style={{ width: "24px", height: "24px" }} />
-        </a>
-        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" style={{ margin: "0 10px" }}>
-          <img src="/images/tiktok.png" alt="TikTok" style={{ width: "24px", height: "24px" }} />
-        </a>
+        <a
+  href="https://www.facebook.com/share/1AMM4kw4Uf/?mibextid=wwXIfr"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ margin: "0 10px" }}
+>
+  <img
+    src="/images/facebook.png"
+    alt="Facebook"
+    style={{ width: "24px", height: "24px" }}
+  />
+</a>
+        <a
+  href="https://www.instagram.com/blingbazaar_pk?igsh=MW9vNzVhc256OXZsMg%3D%3D&utm_source=qr"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ margin: "0 10px" }}
+>
+  <img
+    src="/images/instagram.png"
+    alt="Instagram"
+    style={{ width: "24px", height: "24px" }}
+  />
+</a>
+        <a
+  href="https://www.tiktok.com/@bling_bazaar?_t=ZS-90eNaAvkzVo&_r=1"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ margin: "0 10px" }}
+>
+  <img
+    src="/images/tiktok.png"
+    alt="TikTok"
+    style={{ width: "24px", height: "24px" }}
+  />
+</a>
       </footer>
     </div>
   );
