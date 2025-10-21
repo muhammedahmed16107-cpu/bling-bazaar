@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true, // optional but recommended
+  reactStrictMode: true,
   eslint: {
-    ignoreDuringBuilds: true, // ✅ prevents ESLint errors from breaking the build
+    ignoreDuringBuilds: true, // ✅ disables ESLint during Vercel build
   },
 };
 
