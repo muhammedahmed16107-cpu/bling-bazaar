@@ -80,7 +80,7 @@ export default function Home() {
   const total = totalProducts - discount + DELIVERY_CHARGE;
 
   const applyDiscount = () => {
-    if (discountCode === "D10") {
+    if (discountCode === "DTEN") {
       setDiscountApplied(true);
       alert("✅ Discount applied successfully!");
     } else {
@@ -145,7 +145,7 @@ export default function Home() {
       {/* Hero */}
       <section style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px", padding: "40px 20px", backgroundColor: "#f5f5f5" }}>
         <img src="/images/rolexskydweller.jpg" alt="Rolex Sky Dweller" style={{ maxWidth: "400px", width: "100%", borderRadius: "10px" }} />
-        <img src="/images/a9airpodswhite.jpg" alt="A9 AirPods" style={{ maxWidth: "400px", width: "100%", borderRadius: "10px" }} />
+        <img src="/images/a9airpodsblack.jpg" alt="A9 AirPods" style={{ maxWidth: "400px", width: "100%", borderRadius: "10px" }} />
       </section>
 
       {/* Best Sellers & Categories */}
