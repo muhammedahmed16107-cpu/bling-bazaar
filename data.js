@@ -1,0 +1,152 @@
+const products = [
+  // Mobile Accessories
+  {
+    name: "AirPods Pro 2 Copy",
+    category: "Mobile Accessories",
+    price: 1799,
+    description: "High-quality AirPods Pro 2 copy with noise cancellation and touch controls.",
+    views: 120,
+    colors: [
+      { name: "Black", image: "/images/airpodspro2-black.jpg" },
+      { name: "White", image: "/images/airpodspro2-white.jpg" },
+    ],
+  },
+  {
+    name: "Stereo Earbuds",
+    category: "Mobile Accessories",
+    price: 1499,
+    description: "Clear sound and long battery wireless stereo earbuds.",
+    views: 95,
+    colors: [{ name: "Default", image: "/images/stereo.jpg" }],
+  },
+  {
+    name: "A9 AirPods",
+    category: "Mobile Accessories",
+    price: 2499,
+    description: "High-quality wireless earbuds with crystal clear sound.",
+    views: 410,
+    colors: [
+      { name: "Black", image: "/images/a9airpodsblack.jpg" },
+      { name: "White", image: "/images/a9airpodswhite.jpg" },
+    ],
+  },
+  {
+    name: "P9 Headphones",
+    category: "Mobile Accessories",
+    price: 1799,
+    description: "Comfortable over-ear headphones with deep bass.",
+    views: 180,
+    colors: [
+      { name: "Black", image: "/images/p9-black.jpg" },
+      { name: "White", image: "/images/p9-white.jpg" },
+      { name: "Blue", image: "/images/p9-blue.jpg" },
+    ],
+  },
+  {
+    name: "M25",
+    category: "Mobile Accessories",
+    price: 1599,
+    description: "High-performance wireless earbuds with long battery life.",
+    views: 230,
+    colors: [{ name: "Default", image: "/images/m25.jpg" }],
+  },
+  {
+    name: "M10",
+    category: "Mobile Accessories",
+    price: 1399,
+    description: "Affordable quality earbuds with great sound and comfort.",
+    views: 320,
+    colors: [{ name: "Default", image: "/images/m10.jpg" }],
+  },
+  {
+    name: "GalaxyBuds 3 Pro",
+    category: "Mobile Accessories",
+    price: 3199,
+    description: "Premium Samsung earbuds with crystal clear audio.",
+    views: 150,
+    colors: [{ name: "Default", image: "/images/galaxybuds3.jpg" }],
+  },
+  {
+    name: "AirPods Pro Mastercopy",
+    category: "Mobile Accessories",
+    price: 2499,
+    description: "Noise-cancelling wireless earbuds with premium sound.",
+    views: 280,
+    colors: [
+      { name: "Black", image: "/images/airpodsblack.jpg" },
+      { name: "White", image: "/images/airpodswhite.jpg" },
+    ],
+  },
+
+  // Watches
+  {
+    name: "Arabic Aura",
+    category: "Watches",
+    price: 1599,
+    description: "Stylish Arabic watch with multiple strap colors and elegant design.",
+    views: 390,
+    colors: [
+      { name: "Tiger", image: "/images/watch-tiger.jpg" },
+      { name: "White", image: "/images/watch-white.jpg" },
+      { name: "Black", image: "/images/watch-black.jpg" },
+    ],
+  },
+  {
+    name: "Gucci Ladies",
+    category: "Watches",
+    price: 3499,
+    description: "Luxury ladies watch with timeless design.",
+    views: 210,
+    colors: [{ name: "Default", image: "/images/gucciladies.jpg" }],
+  },
+  {
+    name: "Patek Philippe",
+    category: "Watches",
+    price: 1999,
+    description: "Classic watch with elegant rubber strap.",
+    views: 180,
+    colors: [{ name: "Rubber Strap", image: "/images/patekphillipe.jpg" }],
+  },
+  {
+    name: "Rolex Sky Dweller",
+    category: "Watches",
+    price: 3699,
+    description: "Premium watch with sophisticated design for collectors.",
+    views: 450,
+    colors: [{ name: "Default", image: "/images/rolexskydweller.jpg" }],
+  },
+  {
+    name: "Sabr Watch",
+    category: "Watches",
+    price: 2899,
+    description: "Elegant Sabr watch with black and white dial options.",
+    views: 160,
+    colors: [
+      { name: "Black Dial", image: "/images/sabr-black.jpg" },
+      { name: "White Dial", image: "/images/sabr-white.jpg" },
+    ],
+  },
+  {
+    name: "Alfajr Watch",
+    category: "Watches",
+    price: 9999,
+    description: "Classic Alfajr Islamic watch with prayer time display.",
+    views: 90,
+    colors: [{ name: "Default", image: "/images/alfajr.jpg" }],
+  },
+  {
+    name: "Frozen Claw",
+    category: "Watches",
+    price: 5599,
+    description: "Trendy Frozen Claw watch available in multiple striking colors.",
+    views: 310,
+    colors: [
+      { name: "Blue", image: "/images/frozen-blue.jpg" },
+      { name: "Green", image: "/images/frozen-green.jpg" },
+      { name: "Red", image: "/images/frozen-red.jpg" },
+      { name: "Grey", image: "/images/frozen-grey.jpg" },
+    ],
+  },
+];
+
+export default products;
