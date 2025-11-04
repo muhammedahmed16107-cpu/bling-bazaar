@@ -190,8 +190,8 @@ export default function Home() {
   }}
 >
   {[
-    { name: "Mobile Accessories", image: "/images/m10.jpg" },
-    { name: "Watches", image: "/images/watch-black.jpg" },
+    { name: "Mobile Accessories", image: "/images/mobileaccessories.jpg" },
+    { name: "Watches", image: "/images/watches.jpg" },
     { name: "All Products", image: "/images/allproducts.jpg" },
   ].map((cat) => (
     <div

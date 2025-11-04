@@ -3,7 +3,7 @@ const products = [
   {
     name: "AirPods Pro 2 Copy",
     category: "Mobile Accessories",
-    price: 1799,
+    price: 2099,
     description: "High-quality AirPods Pro 2 copy with noise cancellation and touch controls.",
     views: 120,
     colors: [
