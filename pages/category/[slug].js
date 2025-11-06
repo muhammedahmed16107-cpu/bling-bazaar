@@ -77,11 +77,11 @@ export default function Slug() {
   };
 
   const totalProducts = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
-  const discount = discountApplied ? totalProducts * 0.1 : 0;
+  const discount = discountApplied ? totalProducts * 0.15 : 0;
   const total = totalProducts - discount + DELIVERY_CHARGE;
 
   const applyDiscount = () => {
-    if (discountCode === "DTEN") {
+    if (discountCode === "BLING15") {
       setDiscountApplied(true);
       alert("✅ Discount applied successfully!");
     } else {
