@@ -109,7 +109,7 @@ export default function Slug() {
     formData.append("deliveryCharge", "Rs " + DELIVERY_CHARGE);
     formData.append("finalTotal", "Rs " + total);
 
-    const response = await fetch("https://formspree.io/f/xqagbgpr", {
+    const response = await fetch("https://formspree.io/f/xldadgdb", {
       method: "POST",
       body: formData,
       headers: { Accept: "application/json" },

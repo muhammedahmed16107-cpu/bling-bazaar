@@ -100,7 +100,7 @@ export default function Home() {
     formData.append("deliveryCharge", "Rs " + DELIVERY_CHARGE);
     formData.append("finalTotal", "Rs " + total);
 
-    const response = await fetch("https://formspree.io/f/mgvpkeqw", {
+    const response = await fetch("https://formspree.io/f/xldadgdb", {
       method: "POST",
       body: formData,
       headers: { Accept: "application/json" },
